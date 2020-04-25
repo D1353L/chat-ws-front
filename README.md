@@ -1,4 +1,4 @@
-# chat-ws-client
+# chat-ws-front
 
 ## Project setup
 ```
@@ -7,7 +7,7 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+yarn s
 ```
 
 ### Compiles and minifies for production
