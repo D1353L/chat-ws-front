@@ -48,6 +48,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .sign-up {
+    display: flex;
+    justify-content: center;
+
   form {
       position: absolute;
       width: 450px;
@@ -57,32 +60,33 @@ export default {
       color: $white;
 
       h3 {
-          margin: 30px 0 0 0;
+          margin: 1.2em 0 0 0;
           font-weight: 200;
           font-size: 25px;
       }
 
       input {
-          width: 360px;
-          height: 40px;
-          margin-top: 30px;
+          width: 75.7%;
+          height: 36px;
+          margin-top: 2em;
           font-size: 15px;
           line-height: 18px;
           border: 2px solid transparent;
           border-radius: 3px;
-          padding-left: 15px;
+          padding: 0 0 0 15px;
 
-          &:hover, &:focus{
+          &:hover, &:focus, &:active {
               border: 2px solid $highlight-color;
+              outline: none
           }
       }
 
       button {
-          width: 360px;
+          width: 80%;
           height: 40px;
           border: none;
           border-radius: 10px;
-          margin-top: 25px;
+          margin-top: 1.25em;
           font-weight: 300;
           font-size: 20px;
           line-height: 29px;
@@ -94,12 +98,13 @@ export default {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 25px 45px 0 45px;
+      margin: 1.56em auto;
+      width: 80%;
 
       &:before, &:after {
           content: '';
           display: block;
-          width: 100px;
+          width: 22.2%;
           height: 0px;
           left: 396px;
           top: 455px;
@@ -113,7 +118,7 @@ export default {
   }
 
   .social-media-list {
-      margin-top: 25px;
+      
 
       a {
           margin-right: 20px;
@@ -125,11 +130,20 @@ export default {
   .sign-in-caption {
       font-size: $font-small;
       line-height: 12px;
-      margin-top: 25px;
+      margin-top: 2.2em;
 
       a {
         color: $highlight-color;
       }
+  }
+}
+/* Media requests */
+$breakpoint-tablet: 460px;
+@media(max-width: $breakpoint-tablet){
+  .sign-up {
+    form {
+      width: 90%
+    }
   }
 }
 </style>
