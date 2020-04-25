@@ -17,7 +17,10 @@ export default {
 
 <style lang="scss">
 #app {
+  display: flex;
+  height: 100vh;
   font-family: Roboto;
+
   input {
     background: $primary-input-color;
   }

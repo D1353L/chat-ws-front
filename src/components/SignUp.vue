@@ -1,5 +1,5 @@
 <template>
-  <div class="sign-up">
+  <section class="sign-up">
     <form class="modal-form" action="">
       <h3>
         SIGN UP
@@ -36,7 +36,7 @@
         Already have an account? <a href="#">Sign in</a>
       </p>
     </form>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -49,10 +49,10 @@ export default {
 <style scoped lang="scss">
 .sign-up {
     display: flex;
+    margin: auto;
     justify-content: center;
 
   form {
-      position: absolute;
       width: 450px;
       height: 493px;
       background: rgba(0, 0, 0, 0.568);
@@ -117,14 +117,10 @@ export default {
       }
   }
 
-  .social-media-list {
-      
-
-      a {
-          margin-right: 20px;
-          font-size: 30px;
-          color: $white;
-      }
+  .social-media-list a {
+    margin-right: 20px;
+    font-size: 30px;
+    color: $white;
   }
 
   .sign-in-caption {
