@@ -128,8 +128,8 @@ export default {
           font-size: 30px;
           color: $white;
 
-          &:nth-child(4), &:nth-child(5) {
-            margin-top: 3px;
+          [data-icon="twitter"], [data-icon="linkedin-in"] {
+            margin-top: 5px;
           }
 
       }
@@ -138,10 +138,11 @@ export default {
   .sign-in-caption {
       font-size: $font-small;
       line-height: 12px;
-      margin-top: 2em;
+      margin-top: 2.1em;
 
       a {
         color: $highlight-color;
+        text-decoration: none;
       }
   }
 }
