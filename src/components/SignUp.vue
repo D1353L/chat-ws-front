@@ -49,7 +49,6 @@ export default {
 <style scoped lang="scss">
 .sign-up {
     display: flex;
-    margin: auto;
     justify-content: center;
 
   form {
@@ -60,20 +59,21 @@ export default {
       color: $white;
 
       h3 {
-          margin: 1.2em 0 0 0;
+          margin: 1.15em 0 0 0;
           font-weight: 200;
           font-size: 25px;
       }
 
       input {
-          width: 75.7%;
+          width: 76%;
           height: 36px;
           margin-top: 2em;
           font-size: 15px;
           line-height: 18px;
+          letter-spacing: 0.012em;
           border: 2px solid transparent;
           border-radius: 3px;
-          padding: 0 0 0 15px;
+          padding: 0 0 0 13px;
 
           &:hover, &:focus, &:active {
               border: 2px solid $highlight-color;
@@ -86,10 +86,11 @@ export default {
           height: 40px;
           border: none;
           border-radius: 10px;
-          margin-top: 1.25em;
-          font-weight: 300;
+          margin-top: 1.24em;
+          font-weight: 200;
           font-size: 20px;
           line-height: 29px;
+          font-family: Roboto;
           color: $white;
       }
   }
@@ -98,13 +99,13 @@ export default {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 1.56em auto;
+      margin: 1.55em auto 1.6em;
       width: 80%;
 
       &:before, &:after {
           content: '';
           display: block;
-          width: 22.2%;
+          width: 28%;
           height: 0px;
           left: 396px;
           top: 455px;
@@ -117,16 +118,27 @@ export default {
       }
   }
 
-  .social-media-list a {
-    margin-right: 20px;
-    font-size: 30px;
-    color: $white;
+  .social-media-list {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 48%;
+
+      a {
+          font-size: 30px;
+          color: $white;
+
+          &:nth-child(4), &:nth-child(5) {
+            margin-top: 3px;
+          }
+
+      }
   }
 
   .sign-in-caption {
       font-size: $font-small;
       line-height: 12px;
-      margin-top: 2.2em;
+      margin-top: 2em;
 
       a {
         color: $highlight-color;
@@ -139,6 +151,16 @@ $breakpoint-tablet: 460px;
   .sign-up {
     form {
       width: 90%
+    }
+
+    .social-media-caption {
+      &:before, &:after {
+        width: 24%;
+      }
+    }
+
+    .social-media-list {
+        width: 60%;
     }
   }
 }
