@@ -67,11 +67,10 @@ export default {
       }
 
       input {
-          width: 76%;
-          height: 36px;
+          width: 80%;
+          height: 40px;
           margin-top: 2em;
           font-size: 15px;
-          line-height: 18px;
           letter-spacing: 0.012em;
           border: 2px solid transparent;
           border-radius: 3px;
@@ -91,7 +90,6 @@ export default {
           margin-top: 1.24em;
           font-weight: 200;
           font-size: 20px;
-          line-height: 29px;
           font-family: Roboto;
           color: $white;
       }
@@ -101,7 +99,7 @@ export default {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 1.55em auto 1.6em;
+      margin: 1.4em auto 0;
       width: 80%;
 
       &:before, &:after {
@@ -116,14 +114,13 @@ export default {
       }
       span {
           font-size: $font-small;
-          line-height: 12px;
       }
   }
 
   .social-media-list {
       display: flex;
       justify-content: space-between;
-      margin: 0 auto;
+      margin: 1.6em auto 0;
       width: 48%;
 
       a {
@@ -131,7 +128,7 @@ export default {
           color: $white;
 
           [data-icon="twitter"], [data-icon="linkedin-in"] {
-            margin-top: 5px;
+            margin-top: .1em;
           }
 
       }
@@ -139,8 +136,7 @@ export default {
 
   .sign-in-caption {
       font-size: $font-small;
-      line-height: 12px;
-      margin-top: 2.1em;
+      margin: 2.2em auto;
 
       a {
         color: $highlight-color;

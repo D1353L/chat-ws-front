@@ -20,6 +20,7 @@ export default {
   display: flex;
   height: 100vh;
   font-family: Roboto;
+  line-height: 1em;
 
   input {
     background: $primary-input-color;
