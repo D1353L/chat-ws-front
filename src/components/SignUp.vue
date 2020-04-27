@@ -5,7 +5,7 @@
         {{ $t('sign_up.title') }}
       </h3>
       <input type="email" placeholder="E-mail">
-      <input type="text" :placeholder="$t('sign_up.password.placeholder')">
+      <input v-b-tooltip.hover.right :title="$t('sign_up.password.tooltip')" type="text" :placeholder="$t('sign_up.password.placeholder')">
       <input type="text" :placeholder="$t('sign_up.password_confirmation.placeholder')">
       <button>
         {{ $t('sign_up.submit_button') }}
