@@ -2,17 +2,17 @@
   <section class="sign-up">
     <form class="modal-form" action="">
       <h3>
-        SIGN UP
+        {{ $t('sign_up.title') }}
       </h3>
       <input type="email" placeholder="E-mail">
-      <input type="text" placeholder="Password">
-      <input type="text" placeholder="Password confirmation">
+      <input type="text" :placeholder="$t('sign_up.password.placeholder')">
+      <input type="text" :placeholder="$t('sign_up.password_confirmation.placeholder')">
       <button>
-        SIGN UP
+        {{ $t('sign_up.submit_button') }}
       </button>
       <div class="social-media-caption">
         <span>
-          or sign in with social media
+          {{ $t('sign_up.social_media_caption') }}
         </span>
       </div>
       <div class="social-media-list d-flex">
@@ -33,7 +33,7 @@
         </a>
       </div>
       <p class="sign-in-caption" >
-        Already have an account? <a href="#">Sign in</a>
+        {{ $t('sign_up.sign_in_caption') }} <a href="#">{{ $t('sign_up.sign_in_link') }}</a>
       </p>
     </form>
   </section>
