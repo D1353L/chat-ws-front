@@ -6,11 +6,13 @@
       </h3>
       <input type="email" placeholder="E-mail" />
       <input
-        v-b-tooltip.hover.right
-        :title="$t('sign_up.password.tooltip')"
+        id="password-input"
         type="text"
         :placeholder="$t('sign_up.password.placeholder')"
       />
+      <Tooltip target="password-input" placement="rightbottom">
+        {{ $t('sign_up.password.tooltip') }}
+      </Tooltip>
       <input
         type="text"
         :placeholder="$t('sign_up.password_confirmation.placeholder')"
@@ -49,7 +51,13 @@
 </template>
 
 <script>
-export default {}
+import Tooltip from '@/components/Tooltip.vue'
+
+export default {
+  components: {
+    Tooltip
+  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
