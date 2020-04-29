@@ -10,6 +10,9 @@
   height: 100vh;
   font-family: Roboto;
   line-height: 1em;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 
   input {
     background: $primary-input-color;
