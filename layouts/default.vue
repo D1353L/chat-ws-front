@@ -1,25 +1,18 @@
 <template>
-  <div id="app">
-    <SignUp/>
+  <div>
+    <nuxt />
   </div>
 </template>
 
-<script>
-import SignUp from './components/SignUp.vue'
-
-export default {
-  name: 'App',
-  components: {
-    SignUp
-  }
-}
-</script>
-
 <style lang="scss">
-#app {
+#__nuxt {
   display: flex;
   height: 100vh;
   font-family: Roboto;
+  line-height: 1em;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 
   input {
     background: $primary-input-color;
