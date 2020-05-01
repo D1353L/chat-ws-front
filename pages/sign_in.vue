@@ -1,5 +1,5 @@
 <template>
-  <div class="sign-in">
+  <section class="sign-in">
     <div class="form">
       <div class="bolts">
         <div class="bolt"></div>
@@ -8,7 +8,7 @@
       <h3 class="form-title">
         SAFE SIGN IN
       </h3>
-      <div class="social-media-list d-flex">
+      <div class="social-media-list">
         <a href="#">
           <font-awesome-icon :icon="['fab', 'google']" />
         </a>
@@ -36,7 +36,7 @@
         <div class="bolt"></div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -45,59 +45,92 @@ export default {}
 
 <style scoped lang="scss">
 .sign-in {
-  .form {
-    width: 481px;
-    height: 253px;
-    background: rgba(0, 0, 0, 0.623);
-    text-align: center;
-    padding: 7px;
-  }
-  .bolts {
-    display: flex;
-    justify-content: space-between;
-  }
-  .bolt {
-    width: 10px;
-    height: 10px;
-    border-radius: 100px;
-    background: rgb(207, 207, 207);
-  }
-  .form-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 433px;
+  height: 227px;
+  background: rgba(0, 0, 0, 0.623);
+  text-align: center;
+  padding: 6px;
+  p {
     font-family: Roboto;
     font-style: normal;
-    font-weight: 200;
-    font-size: 27.3px;
-    line-height: 29px;
-    color: $white;
-    margin-top: 0.3em;
-  }
-  .social-media-list {
-    width: 85%;
-    margin: 2.65em auto 2.4em;
-    justify-content: space-between;
-  }
-  a {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 350%;
-    line-height: 57px;
-    color: $white;
-
-    [data-icon='twitter'],
-    [data-icon='linkedin-in'] {
-      margin-top: 0.1em;
-    }
-  }
-  .form p {
-    font-style: normal;
     font-weight: 300;
-    font-size: 13.35px;
+    font-size: 12px;
     line-height: 14px;
-    margin: 0 0 0.3em;
+    margin-bottom: 0.225em;
     color: $white;
   }
-  .bottom {
-    margin-top: 0.5em;
+}
+
+.bolts {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bolt {
+  width: 9px;
+  height: 9px;
+  border-radius: 100px;
+  background: rgb(207, 207, 207);
+}
+
+.form-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 25px;
+  line-height: 29px;
+  color: $white;
+  margin-top: 0.2em;
+}
+
+.social-media-list {
+  width: 86%;
+  margin: 2.2em auto 1.73em;
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 57px;
+  color: $white;
+
+  [data-icon='google'] {
+    margin-top: 0.083em;
+  }
+  [data-icon='facebook-f'] {
+    margin-top: 0.06em;
+  }
+  [data-icon='twitter'] {
+    margin-top: 0.15627em;
+  }
+  [data-icon='linkedin-in'] {
+    margin-top: 0.1962em;
+  }
+  [data-icon='github'] {
+    margin-top: 0.098em;
+  }
+}
+
+.bottom {
+  margin-top: 0.3em;
+}
+/* Media requests */
+$breakpoint-tablet: 460px;
+@media (max-width: $breakpoint-tablet) {
+  .sign-in {
+    .form {
+      width: 90%;
+    }
   }
 }
 </style>
