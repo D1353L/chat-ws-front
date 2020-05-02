@@ -13,12 +13,5 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-
-  input {
-    background: $primary-input-color;
-  }
-  button {
-    background: $primary-button-color;
-  }
 }
 </style>
