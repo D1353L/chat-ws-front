@@ -38,7 +38,7 @@ export default {}
 </script>
 
 <style scoped lang="scss">
-$container-width: 433px;
+$container-width: 579px;
 
 .sign-in {
   width: 100%;
@@ -48,7 +48,7 @@ $container-width: 433px;
 
   .sign-in-container {
     width: $container-width;
-    height: 227px;
+    height: 301px;
     background: rgba(0, 0, 0, 0.623);
     text-align: center;
     position: relative;
@@ -56,6 +56,7 @@ $container-width: 433px;
     p {
       font-weight: 300;
       font-size: $font-small;
+      line-height: 18px;
       margin-bottom: 0.1em;
       color: $white;
     }
@@ -69,8 +70,8 @@ $container-width: 433px;
       left: 0;
 
       .circle {
-        width: 10px;
-        height: 10px;
+        width: 15px;
+        height: 15px;
         border-radius: 100%;
         background: $light-gray;
       }
@@ -90,12 +91,12 @@ $container-width: 433px;
       font-weight: 100;
       font-size: $font-medium;
       color: $white;
-      margin-top: 0.8em;
+      margin-top: 0.5em;
     }
 
     .social-media-list {
-      width: 83.5%;
-      margin: 2.1em auto 2em;
+      width: 80%;
+      margin: 2.45em auto 2.7em;
       display: flex;
 
       a {
@@ -126,7 +127,7 @@ $container-width: 433px;
   }
 
   a + a {
-    margin-left: 9%;
+    margin-left: 6%;
   }
 }
 
@@ -171,8 +172,13 @@ $container-width: 433px;
       }
 
       p {
-        margin-bottom: 0.2em;
+        margin-bottom: 0.1em;
         font-size: 3.33vw;
+      }
+
+      .circles-container .circle {
+        width: 10px;
+        height: 10px;
       }
 
       .circles-container-bottom {
